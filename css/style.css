@@ -65,8 +65,8 @@ body {
 .text-h4 {
     font-family: "Oswald", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 500;
-    font-size: 21px;
+    font-weight: 700;
+    font-size: 48px;
 }
 
 .text-p {
@@ -266,7 +266,6 @@ body {
         padding-top: 150px;
         padding-bottom: 80px;
     }
-}
     .about__flex {
         flex-direction: column;
         align-items: center;
@@ -281,4 +280,44 @@ body {
     
 }
 
+
+.request {
+    background-color: var(--accent-color);
+}
+.request__rect {
+    display: flex;
+    justify-content: space-between;
+}
+.request__rect-left {
+    padding-top: 30px;
+    padding-bottom: 45px;
+}
+
+.req-h4 {
+    color: var(--white-color);
+}
+.text-h5 {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--white-color);
+}
+.request__rect-right {
+    margin-top: 73px;
+}
+.request__rect-right-btn {
+    width: 175px;
+    height: 49px;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.request__rect-right-btn::before {
+    content: url(../img/message.svg);
+    padding-right: 15px;
+}
 
