@@ -67,7 +67,6 @@ body {
     font-optical-sizing: auto;
     font-weight: 500;
     font-size: 21px;
-    letter-spacing: 0.05em;
 }
 
 .text-p {
@@ -138,6 +137,14 @@ body {
     margin: 0 auto 17px;
     color: var(--white-color);
 }
+
+@media screen and (max-width: 380px) {
+    .h1 {
+        font-size: 46px;
+        line-height: 64px;
+    }
+}
+
 .h4 {
     font-weight: 400;
     font-size: 18px;
@@ -210,6 +217,7 @@ body {
 @media screen and (max-width: 768px) {
     .info{
         position: relative;
+        padding: 30px 0;
     }
     .about__grid {
         display: grid;
@@ -301,6 +309,7 @@ body {
     text-transform: uppercase;
     color: var(--white-color);
     margin-bottom: 7px;
+    letter-spacing: 0.05em;
 }
 .text-h5 {
     font-family: "Oswald", sans-serif;
@@ -341,6 +350,7 @@ body {
 @media screen and (max-width: 768px) {
     .request__rect {
         flex-wrap: wrap;
+        padding-bottom: 20px;
     }
 }
 
@@ -349,11 +359,9 @@ body {
     padding: 150px 0;
 }
 
-
-
 .serv-h2 {
     text-align: center;
-    margin-bottom: 66px;
+    margin-bottom: 55px;
 }
 
 .services__grid{
@@ -361,26 +369,44 @@ body {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 30px;
+    justify-items: center;
 }
 
 .services__grid-item {
     background-color: #F7F7F7;
     max-width: 350px;
     width: 100%;
-    max-height: 250px;
-    height: 100%;
+    padding: 59px 0;
 }
 
 .service-img {
-    display: block;
-    margin: 0 auto;
-    padding-top: 59px;
-    margin-bottom: 30px;
+    margin: 0 auto 21px;
 }
 
 .serv-h4 {
     text-align: center;
-    width: 172px;
+    max-width: 172px;
     margin: 0 auto;
-    padding-bottom: 59px;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+}
+
+@media screen and (max-width: 1280px) {
+    .services {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .services__grid{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .services__grid-item {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .services__grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
