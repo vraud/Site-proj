@@ -290,25 +290,6 @@ body {
     color: var(--gray-color);
     max-width: 730px;
 }
-.question-h3.close{
-    margin-bottom: 31px;
-}
-.question-h3.open::before, .question-h3.close::before {
-    content: "";
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    background-image: url(../img/Polygon.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-right: 14px;
-}
-.question-h3.open::before {
-    transform: rotate(-90deg);
-}
-.question-h3.close + .question-p{
-    display: none;
-}
 .partners {
     padding-top: 100px;
     padding-bottom: 80px;
@@ -382,6 +363,10 @@ body {
 .contacts__h3 {
     text-transform: uppercase;
 }
+.contacts__h3 a {
+    text-decoration: none;
+    color: inherit;
+}
 .contacts__h3-gray {
     color: var(--gray-color);
     margin-bottom: 18px;
@@ -399,6 +384,10 @@ body {
     justify-content: space-between;
 }
 @media screen and (max-width: 1280px) {
+    .header__title {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
     .about {
         padding: 450px 15px 110px 15px;
     }
