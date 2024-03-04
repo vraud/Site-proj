@@ -6,19 +6,30 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Test site</title>
 </head>
 <body>
+
+    <ul id="slide-out" class="sidenav">
+        <li><a href="#!"><i class="material-icons">home</i>Главная</a></li>
+        <li><a href="#!"><i class="material-icons">people</i>О нас</a></li>
+        <li><a href="#!"><i class="material-icons">grade</i>Услуги</a></li>
+        <li><a href="#!"><i class="material-icons">phone</i>Контакты</a></li>
+        <li><div class="divider"></div></li>
+        <li><a href="#!" class="sidenav-close"><i class="material-icons">close</i>Закрыть</a></li>
+    </ul>
+
     <header class="header">
         <div class="container">
             <div class="header__title">
                 <img class="logo" src="img/logo.svg" alt="logo">
-                <button class="burger">
+                <a class="burger sidenav-trigger" data-target="slide-out">
                     <span class="burger__line"></span>
                     <span class="burger__line"></span>
                     <span class="burger__line"></span>
-                </button>
+                </a>
             </div>
             <h1 class="h1">Реализуем крупнейшие проекты в России</h1>
             <h4 class="h4">стадионы, газопроводы, мосты, дамбы</h4>
@@ -77,6 +88,13 @@
         </div>
     </section>
 
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>Заголовок окна</h4>
+            <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Курсивных продолжил его, путь прямо приставка ее по всей над вопрос. Запятых большого пояс ведущими маленький своего всемогущая даль! Безорфографичный коварных толку даже родного до несколько всемогущая, он снова единственное жизни власти злых диких, которой напоивший заголовок рукопись жаренные семь пор точках текст последний рукописи силуэт? Которой использовало парадигматическая силуэт взгляд сих бросил текста свою своего залетают за, напоивший, запятой путь предупредила мир свой ipsum свое она маленькая даже! Использовало запятых заманивший диких продолжил журчит скатился, назад всеми подпоясал первую знаках себя своего щеке последний все над снова? Моей, семь единственное?</p>
+        </div>
+    </div>
+
     <section class="request">
         <div class="container">
             <div class="request__rect">
@@ -85,7 +103,7 @@
                     <h5 class="text-h5">Реализуем самые смелые решения в России</h5>
                 </div>
                 <div class="request__rect-right">
-                    <button class="request__rect-right-btn">Ваш запрос</button>
+                    <a class="request__rect-right-btn modal-trigger" href="#modal1">Ваш запрос</a>
                 </div>
             </div>
         </div>
@@ -126,28 +144,28 @@
     <section class="portfolio">
         <div class="portfolio__grid">
             <div class="portfolio__grid-item">
-                <img src="img/portfolio.jpg" alt="Portfolio item" class="portfolio__img">
+                <img src="img/portfolio.jpg" alt="Portfolio item" class="portfolio__img materialboxed">
             </div>
             <div class="portfolio__grid-item">
-                <img src="img/portfolio.jpg" alt="Portfolio item" class="portfolio__img">
+                <img src="img/portfolio.jpg" alt="Portfolio item" class="portfolio__img materialboxed">
             </div>
             <div class="portfolio__grid-item">
-                <img src="img/portfolio.jpg" alt="Portfolio item" class="portfolio__img">
+                <img src="img/portfolio.jpg" alt="Portfolio item" class="portfolio__img materialboxed">
             </div>
             <div class="portfolio__grid-item">
-                <img src="img/portfolio.jpg" alt="Portfolio item" class="portfolio__img">
+                <img src="img/portfolio.jpg" alt="Portfolio item" class="portfolio__img materialboxed">
             </div>
             <div class="portfolio__grid-item">
-                <img src="img/portfolio.jpg" alt="Portfolio item" class="portfolio__img">
+                <img src="img/portfolio.jpg" alt="Portfolio item" class="portfolio__img materialboxed">
             </div>
             <div class="portfolio__grid-item">
-                <img src="img/portfolio.jpg" alt="Portfolio item" class="portfolio__img">
+                <img src="img/portfolio.jpg" alt="Portfolio item" class="portfolio__img materialboxed">
             </div>
             <div class="portfolio__grid-item">
-                <img src="img/portfolio.jpg" alt="Portfolio item" class="portfolio__img">
+                <img src="img/portfolio.jpg" alt="Portfolio item" class="portfolio__img materialboxed">
             </div>
             <div class="portfolio__grid-item">
-                <img src="img/portfolio.jpg" alt="Portfolio item" class="portfolio__img">
+                <img src="img/portfolio.jpg" alt="Portfolio item" class="portfolio__img materialboxed">
             </div>
         </div>
     </section>
@@ -228,6 +246,13 @@
         </div>
     </section>
 
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <h4>Заголовок окна 2</h4>
+            <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Курсивных продолжил его, путь прямо приставка ее по всей над вопрос. Запятых большого пояс ведущими маленький своего всемогущая даль! </p>
+        </div>
+    </div>
     <section class="request">
         <div class="container">
             <div class="request__rect">
@@ -236,7 +261,7 @@
                     <h5 class="text-h5">Оставьте заявку и мы свяжемся с вами!</h5>
                 </div>
                 <div class="request__rect-right">
-                    <button class="request__rect-right-btn">Ваш запрос</button>
+                    <a class="request__rect-right-btn modal-trigger" href="#modal2">Ваш запрос</a>
                 </div>
             </div>
         </div>
@@ -280,5 +305,8 @@
             </div>
         </div>
     </footer>
+
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
